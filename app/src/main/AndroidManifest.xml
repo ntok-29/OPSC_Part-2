@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_charts"
+        android:label="BudgetBuddy"
+        android:roundIcon="@drawable/ic_wallet"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartBudget"
+        tools:targetApi="31">
+        <activity
+            android:name=".item_transaction"
+            android:exported="false" />
+        <activity
+            android:name=".item_budget"
+            android:exported="false" />
+        <activity
+            android:name=".dialog_add_income"
+            android:exported="false" />
+        <activity
+            android:name=".dialog_add_expense"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

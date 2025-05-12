@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="0dp">
+
+    <!-- Curved Top with Decorative Elements -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_header_background"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginTop="-20dp"
+            android:alpha="0.3"
+            android:src="@drawable/circle_shape"
+            app:tint="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.2"
+            android:src="@drawable/circle_shape"
+            app:tint="#FFFFFF"/>
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Add Budget"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"/>
+    </FrameLayout>
+
+    <!-- Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Amount Input with Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#40000000"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_budget"
+                    app:tint="#FFFFFF"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#40000000"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxStrokeWidth="0dp"
+                app:hintTextColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="Budget Amount"
+                    android:inputType="numberDecimal"
+                    android:padding="16dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#80FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Category Section with Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#40000000"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_budget"
+                    app:tint="#FFFFFF"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Category"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    app:cardBackgroundColor="#40000000"
+                    app:cardElevation="0dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:background="@android:color/transparent"
+                        android:popupBackground="@drawable/spinner_popup_background"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Color Selection with Animation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Select Budget Color"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Green -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorGreen"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#4CAF50"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Blue -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorBlue"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#2196F3"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Orange -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorOrange"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#FF5722"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Purple -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorPurple"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#9C27B0"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Yellow -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorYellow"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#FFC107"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Teal -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorTeal"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#009688"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Pink -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/colorPink"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:cardBackgroundColor="#E91E63"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:rippleColor="#40000000">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#40000000"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="CANCEL"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="SAVE"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="16dp"
+                android:background="@drawable/gradient_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

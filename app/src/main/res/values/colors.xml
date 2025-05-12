@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+        <color name="colorPrimary">#4CAF50</color>
+        <color name="colorPrimaryDark">#388E3C</color>
+        <color name="colorAccent">#8BC34A</color>
+        <color name="income_green">#4CAF50</color>
+        <color name="expense_red">#F44336</color>
+        <color name="food_green">#4CAF50</color>
+        <color name="transport_blue">#2196F3</color>
+        <color name="rent_orange">#FF5722</color>
+        <color name="entertainment_purple">#9C27B0</color>
+        <color name="shopping_yellow">#FFC107</color>
+    <color name="purple_primary">#6A11CB</color>
+    <color name="blue_secondary">#2575FC</color>
+    <color name="text_dark">#FF333333</color>
+
+
+        <!-- Primary Colors -->
+
+
+        <!-- Background Colors -->
+        <color name="backgroundDark">#121212</color>
+        <color name="cardBackgroundDark">#1E1E1E</color>
+        <color name="cardStrokeColor">#2E2E2E</color>
+
+        <!-- Text Colors -->
+        <color name="textPrimary">#FFFFFF</color>
+        <color name="textSecondary">#B3B3B3</color>
+        <color name="textHint">#666666</color>
+
+        <!-- Category Colors -->
+        <color name="foodColor">#4CAF50</color>
+        <color name="transportColor">#2196F3</color>
+        <color name="rentColor">#FF9800</color>
+        <color name="entertainmentColor">#9C27B0</color>
+        <color name="shoppingColor">#FFC107</color>
+
+        <!-- Card Colors -->
+        <color name="incomeCard">#4CAF50</color>
+        <color name="expenseCard">#F44336</color>
+        <color name="balanceCard">#2196F3</color>
+
+        <!-- Progress Colors -->
+        <color name="progressTrackColor">#2E2E2E</color>
+
+        <!-- Accent Colors -->
+        <color name="colorAccentLight">#80DEEA</color>
+
+
+</resources>

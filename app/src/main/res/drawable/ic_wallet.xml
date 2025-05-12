@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48"
+    android:tint="#FFEB3B">
+
+    <!-- Background Rounded Rectangle with shadow effect -->
+    <path
+        android:fillColor="#2E2E2E"
+        android:pathData="M6,12c0,-3.3 2.7,-6 6,-6h24c3.3,0 6,2.7 6,6v24c0,3.3 -2.7,6 -6,6H12c-3.3,0 -6,-2.7 -6,-6V12z"/>
+
+    <!-- Inner panel (like a card or screen) -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M14,17h20v14H14z"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1.5"/>
+
+    <!-- Indicator or decorative circle -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M24,27a2,2 0 1,1 0,4 2,2 0 0,1 0,-4z"/>
+
+    <!-- Top decorative stripe for card effect -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M14,17h20v3H14z"/>
+
+</vector>

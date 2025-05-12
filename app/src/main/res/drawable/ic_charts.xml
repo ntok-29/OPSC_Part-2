@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#2C2C2C"
+        android:pathData="M24,2C12.4,2 2,12.4 2,24s10.4,22 22,22 22,-10.4 22,-22S35.6,2 24,2z"/>
+
+    <!-- Modern Green Wave -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M12,32c0,-8 6,-12 12,-12s12,4 12,12c-2,0 -4,1 -6,1s-4,-1 -6,-1 -4,1 -6,1 -4,-1 -6,-1z"/>
+
+    <!-- Blue Curved Accent -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M14,20c2,-6 10,-6 14,0 -2,-1 -4,-2 -7,-2s-5,1 -7,2z"/>
+
+    <!-- Yellow Spark Star -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M35,14l2,6 6,0 -5,3 2,6 -5,-4 -5,4 2,-6 -5,-3 6,0z"/>
+
+</vector>
