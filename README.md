@@ -1,5 +1,12 @@
-Budget Buddy source code
-this application is for users who wish to keep track and save their money.
+***BudgetBuddy source code***
 
-users will register if required. After registration, a home page (dashboard) can be accessed where you can add your budget, monthly or daily expenses and keep track of that
-the app is user friendly and has many more features that can be accessed.
+BudgetBuddy is an intuitive personal finance app designed to make budgeting 
+engaging rather than stressful. By incorporating gamification elements and visual 
+feedback, it encourages users to develop healthy financial habits. 
+BudgetBuddy transforms financial management through: 
+Behavioral Psychology: Gamification encourages consistent use 
+Finance Assistance: Smart suggestions prevent budget fatigue 
+Family Focus: Multi-user support for household budgets
+
+DOCUMENTATION OF THE APP (MANUAL):
+1. 
